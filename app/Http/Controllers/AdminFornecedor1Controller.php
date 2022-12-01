@@ -43,7 +43,7 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'CNPJ / CPF','name'=>'cnpjcpf','type'=>'text','validation'=>'required|min:1|max:255|numeric','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'CNPJ / CPF','name'=>'cnpjcpf','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Email','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:fornecedor','width'=>'col-sm-10','placeholder'=>'Por favor digite um endereço de e-mail válido'];
 			$this->form[] = ['label'=>'Site','name'=>'www','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Endereço','name'=>'endereco','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
@@ -56,7 +56,7 @@
 			# OLD START FORM
 			//$this->form = [];
 			//$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'CNPJ / CPF','name'=>'cnpjcpf','type'=>'text','validation'=>'required|min:1|max:255|','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'CNPJ / CPF','name'=>'cnpjcpf','type'=>'text','validation'=>'required|min:1|max:255|numeric','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Email','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:fornecedor','width'=>'col-sm-10','placeholder'=>'Por favor digite um endereço de e-mail válido'];
 			//$this->form[] = ['label'=>'Site','name'=>'www','type'=>'text','validation'=>'min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Endereço','name'=>'endereco','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];

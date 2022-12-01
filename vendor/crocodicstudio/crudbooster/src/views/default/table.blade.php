@@ -148,7 +148,7 @@
         </tbody>
 
 
-        <tfoot>
+       <!-- 
         <tr>
             <?php if($button_bulk_action):?>
             <th>&nbsp;</th>
@@ -174,7 +174,7 @@
                 @endif
             @endif
         </tr>
-        </tfoot>
+        </tfoot>-->
     </table>
 
 </form><!--END FORM TABLE-->
@@ -185,8 +185,7 @@ $from = $result->count() ? ($result->perPage() * $result->currentPage() - $resul
 $to = $result->perPage() * $result->currentPage() - $result->perPage() + $result->count();
 $total = $result->total();
 ?>
-<div class="col-md-4"><span class="pull-right">{{ cbLang("filter_rows_total") }}
-        : {{ $from }} {{ cbLang("filter_rows_to") }} {{ $to }} {{ cbLang("filter_rows_of") }} {{ $total }}</span></div>
+
 
 @if($columns)
     @push('bottom')

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{cbLang("page_title_login")}} : {{Session::get('appname')}}</title>
+    <title>{{cbLang("page_title_login")}}  {{Session::get('appname')}}</title>
     <meta name='generator' content='CRUDBooster'/>
     <meta name='robots' content='noindex,nofollow'/>
     <link rel="shortcut icon"
@@ -60,9 +60,7 @@
 <div class="login-box">
     <div class="login-logo">
         <a href="{{url('/')}}">
-            <img title='{!!(Session::get('appname') == 'CRUDBooster')?"<b>CRUD</b>Booster":CRUDBooster::getSetting('appname')!!}'
-                 src='{{ CRUDBooster::getSetting("logo")?asset(CRUDBooster::getSetting('logo')):asset('vendor/crudbooster/assets/logo_crudbooster.png') }}'
-                 style='max-width: 100%;max-height:170px'/>
+            
         </a>
     </div><!-- /.login-logo -->
     <div class="login-box-body">
@@ -79,7 +77,7 @@
             
             @if(!empty(config('services.google')))
 
-                <div style="margin-bottom:10px" class='row'>
+                <div style="margin-bottom:10px"  class='row'>
                     <div class='col-xs-12'>
 
                         <a href='{{route("redirect", 'google')}}' class="btn btn-primary btn-block btn-flat"><i class='fa fa-google'></i>
